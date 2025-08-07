@@ -1,12 +1,95 @@
-# React + Vite
+# 🧩 AsyncAPI DnD YAML Generator
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This project is a React + Vite application that lets you drag and drop AsyncAPI components, edit their fields, and generate a valid YAML document for use with AsyncAPI tools.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🚀 Getting Started
 
-## Expanding the ESLint configuration
+### 1. Clone the Repo
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+```bash
+git clone https://github.com/DataProductLab/data-product-designer.git
+cd data-product-designer
+```
+
+### 2. Install Node.js (if not already installed)
+
+- Download from: https://nodejs.org/
+- Recommended: **LTS version (e.g., 20.x or 18.x)**
+- This will install both `node` and `npm`.
+
+To verify installation:
+
+```bash
+node -v
+npm -v
+```
+
+### 3. Install Dependencies
+
+```bash
+npm install
+```
+
+### 4. Start the Dev Server
+
+```bash
+npm run dev
+```
+
+Then visit: [http://localhost:5173](http://localhost:5173)
+
+---
+
+## 🛠️ Stack
+
+- [Vite](https://vitejs.dev/)
+- React
+- [dnd-kit](https://github.com/clauderic/dnd-kit)
+- [js-yaml](https://github.com/nodeca/js-yaml)
+- (Optional) Tailwind CSS
+
+---
+
+## 📦 Node Version (optional)
+
+If you use `nvm` to manage Node versions:
+
+1. Create a `.nvmrc` file with the version you're using:
+
+```bash
+echo "20" > .nvmrc
+```
+
+2. Then run:
+
+```bash
+nvm use
+```
+
+If the version isn’t installed:
+
+```bash
+nvm install
+```
+
+---
+
+## 🔧 Scripts
+
+Make sure your `package.json` includes the following scripts:
+
+```json
+"scripts": {
+  "dev": "vite",
+  "build": "vite build",
+  "preview": "vite preview"
+}
+```
+
+---
+
+## 📄 License
+
+MIT License. Contributions welcome!
